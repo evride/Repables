@@ -1,0 +1,114 @@
+body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.clearBoth{
+	clear:both;
+}
+#codename{
+	color:#666;	
+	font-family: 'Orbitron', sans-serif;
+	font-weight:900;	
+	text-shadow: 0px 0px 5px rgba(0, 150, 255, .4);
+	margin-left:0px;
+}
+#background{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #020031;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: -moz-linear-gradient(45deg, #020031 0%, #024289 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#024289));
+	background: -webkit-linear-gradient(45deg, #020031 0%,#024289 100%);
+	background: -o-linear-gradient(45deg, #020031 0%,#024289 100%);
+	background: -ms-linear-gradient(45deg, #020031 0%,#024289 100%);
+	background: linear-gradient(45deg, #020031 0%,#024289 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#024289',GradientType=1 );
+}
+#dotOverlay{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../img/dot_pattern.png) repeat center center;	
+}
+#navBar{
+	border-bottom:1px solid #0099FF;
+}
+.bannerContent{
+	z-index:1;
+	position:relative;
+}
+.bannerContent h1{
+	color:#FFFFFF;
+	margin-top:50px;
+	text-shadow: 0px 0px 10px rgba(0, 0,0,1);
+}
+.bannerContent a{
+
+}
+#messageContainer{
+	display: block;
+	position: absolute;
+	width:0;
+	height:0;
+	left:50%;
+	top:50%;
+}
+#content{
+	position:relative;
+	width:800px;
+	height:300px;
+	left:-400px;
+	top:-150px;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+			border-radius: 6px;
+			
+	background:#FAFAFA;
+	background: -moz-linear-gradient(45deg, #EEEEEE 0%, #FAFAFA 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#EEEEEE), color-stop(100%,#FAFAFA));
+	background: -webkit-linear-gradient(45deg, #EEEEEE 0%,#FAFAFA 100%);
+	background: -o-linear-gradient(45deg, #EEEEEE 0%,#FAFAFA 100%);
+	background: -ms-linear-gradient(45deg, #EEEEEE 0%,#FAFAFA 100%);
+	background: linear-gradient(45deg, #EEEEEE 0%,#FAFAFA 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEEEEE', endColorstr='#FAFAFA',GradientType=1 );
+}
+#message{
+	padding:30px 50px 50px 50px;
+}
+#message h1{
+	margin-bottom:30px;
+	color:#555;	
+	font-family: 'Orbitron', sans-serif;
+	font-weight:900;	
+	text-shadow: 0px 0px 10px rgba(0, 150, 255, .7);
+}
+#message p{
+	margin-bottom:40px;
+	font-size:16px;
+}
+#email{
+	height:34px;
+	margin-top:10px;
+	width:300px;
+}
+#emailForm label{
+	float:left;
+	padding-top:20px;
+	padding-right:10px;
+	
+}
+@media handheld {
+	div#dotOverlay{
+		display:none;
+	}
+}
